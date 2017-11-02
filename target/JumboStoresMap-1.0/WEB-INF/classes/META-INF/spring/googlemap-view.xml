@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+	<mvc:resources mapping="/libs/**" location="/googlemap/libs/"/>
+	<mvc:resources mapping="/scripts/**" location="/googlemap/scripts/"/>
+	<mvc:resources mapping="/styles/**" location="/googlemap/styles/"/>
+	<mvc:resources mapping="/images/**" location="/googlemap/images/"/>
+	<mvc:resources mapping="/views/**" location="/googlemap/views/"/>
+
+
+	<mvc:view-controller path="/" view-name="index"/>
+
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/googlemap/"/>
+		<property name="suffix" value=".html"/>
+	</bean>
+
+</beans>

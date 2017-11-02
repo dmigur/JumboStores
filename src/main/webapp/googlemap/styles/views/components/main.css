@@ -1,0 +1,212 @@
+.html,
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 2px solid #888;
+    text-align: center;
+    width: 20%; /* Could be more or less, depending on screen size */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.message {
+    padding-bottom: 15px;
+}
+
+td > input[type='text'] {
+    width: 100%; /*this will set the width of the textbox equal to its container td*/
+}
+
+input[type="text"]:disabled {
+    color: #000;
+    background-color: white;
+}
+
+input[type="date"]:disabled {
+    color: #000;
+    background-color: white;
+}
+
+body {
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+
+.page-container {
+    margin: 20px;
+}
+
+/* horizontal panel*/
+
+.panel-container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid silver;
+    overflow: hidden;
+
+    /* avoid browser level touch actions */
+    xtouch-action: none;
+}
+
+.panel-left {
+    flex: 0 0 auto;
+    /* only manually resize */
+    padding: 10px;
+    width: 300px;
+    min-height: 200px;
+    min-width: 150px;
+    white-space: nowrap;
+    background: #838383;
+    color: white;
+}
+
+.splitter {
+    flex: 0 0 auto;
+    width: 18px;
+    background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/vsizegrip.png) center center no-repeat #535353;
+    min-height: 200px;
+    cursor: col-resize;
+}
+
+.panel-right {
+    flex: 1 1 auto;
+    /* resizable */
+    padding: 10px;
+    width: 100%;
+    min-height: 200px;
+    min-width: 200px;
+    background: #eee;
+}
+
+/* vertical panel */
+
+.panel-container-vertical {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border: 1px solid silver;
+    overflow: hidden;
+}
+
+.panel-top {
+    flex: 0 0 auto;
+    /* only manually resize */
+    padding: 10px;
+    width: 100%;
+    min-height: 250px;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.splitter-horizontal {
+    flex: 0 0 auto;
+    height: 18px;
+    background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/hsizegrip.png) center center no-repeat #535353;
+    cursor: row-resize;
+}
+
+.panel-bottom {
+    flex: 1 1 auto;
+    /* resizable */
+    padding: 10px;
+    min-height: 100px;
+    background: #eee;
+}
+
+label {
+    font-size: 1.2em;
+    display: block;
+    font-weight: bold;
+    margin: 30px 0 10px;
+}
+
+pre {
+    margin: 20px;
+    padding: 10px;
+    background: #eee;
+    border: 1px solid silver;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+/*
+@header_background_color: #333;
+@header_text_color: #FDFDFD;
+@alternate_row_background_color: #DDD;
+*/
+
+/*@table_width: 750px;*/
+/*@table_body_height: 300px;*/
+/*
+@column_one_width: 200px;
+@column_two_width: 200px;
+@column_three_width: 350px;
+
+
+.fixed_headers {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.fixed_headers th {
+    text-decoration: underline;
+}
+*/
+
+/*
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+*/
+
+
+.fixed_headers td, th
+{
+    height: 40px;
+    color: white;
+    background-color: #2a6496;
+    text-align: left;
+    vertical-align: top;
+    border-spacing: 0;
+}
+
+td + td {
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+
+.mainmenu {
+    background-color: #d2dfea;
+    padding-right: 5px;
+
+}
+
+#map {
+    height: 550px;
+    margin: 20px 1px;
+    width: 95%;
+}
+
+#info {
+    height: 150px;
+    max-height: 250px;
+    overflow-y: visible;
+}

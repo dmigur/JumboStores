@@ -1,11 +1,11 @@
 JumboMap Stores View App Readme
 
-1) Installation:
+Installation:
   1. Put  jumbomap.war into tomcat server webapps folder
   2. Start tomcat
   3. In browser open page http://localhost:8080/jumbomap/
 
-2) Settings
+Settings
 
 Settings file: googlemap-target.properties
 

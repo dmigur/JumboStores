@@ -19,7 +19,7 @@
         <maven.plugin.release.version>2.4</maven.plugin.release.version>
         <maven.plugin.war.version>2.3</maven.plugin.war.version>
         <!-- Spring version -->
-        <lib.springframework.version>4.1.1.RELEASE</lib.springframework.version>
+        <lib.springframework.version>5.2.7.RELEASE</lib.springframework.version>
         <!-- Libraries version -->
         <lib.orika.version>1.4.3</lib.orika.version>
         <lib.cglib.version>2.2.2</lib.cglib.version>

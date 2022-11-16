@@ -23,7 +23,7 @@
         <!-- Libraries version -->
         <lib.orika.version>1.4.3</lib.orika.version>
         <lib.cglib.version>2.2.2</lib.cglib.version>
-        <lib.jackson.version>2.2.0</lib.jackson.version>
+        <lib.jackson.version>2.12.7.1</lib.jackson.version>
         <lib.aspectjrt.version>1.6.9</lib.aspectjrt.version>
         <lib.aspectjweaver.version>1.7.0</lib.aspectjweaver.version>
         <lib.junit.version>4.11</lib.junit.version>
